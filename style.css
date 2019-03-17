@@ -1,12 +1,11 @@
 /**
     TO DO: 
-    Maybe add message to contact page and style?
-    add hrefs to navbar and get title to center when in smallest setting
-    **GO ALL OUT THIS IS YOUR PORTFOLIO MAKE IT SHNAZZY!**
-    ADD STICKY FOOTER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    **Get rid of navbar bg-dark
+    **Get rid of stickyfooter
 */
 body {
   background-image: url(images/prism.png);
+  height: 100vh;
 }
 
 .navbar-brand {
@@ -28,8 +27,24 @@ body {
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.portfolio-pic {
-  margin: 25px;
+.port-container {
+  position: relative;
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  margin: 20px;
+}
+h3 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  text-align: center;
+  background-color: rgb(1, 159, 221);
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  padding: 5px 15px 5px;
 }
 hr {
   height: 1px;
@@ -51,5 +66,20 @@ h2 {
   background-color: rgb(1, 159, 221);
   padding: 15px;
   padding-top: 8px;
-  color: whitesmoke;
+  color: #ffffff;
+}
+.submit-button {
+  background-color: rgb(1, 159, 221);
+  margin: 0px 0px 20px 20px;
+  border-width: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 5px 10px 5px;
+}
+.container-flex {
+  min-height: calc(100vh - 70px);
+}
+footer {
+  height: 50px;
 }
